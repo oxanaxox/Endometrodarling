@@ -7,7 +7,7 @@
   <title>Enlever les bâtons des roues</title>
   <link rel="stylesheet" href="style.css"> 
 </head>
-
+<script src="glitters.js"></script>
 <body>
   <header>
     <h1> Endométrodarling </h1> <br>
@@ -51,13 +51,14 @@
       <h2>En cas de crise, en cas d'urgence</h2>
       <p>Informations essentielles pour gérer une crise de douleurs pelviennes</p>
     </a>
-   <a href="simplifier.html" class="special-card important-card">
+  
+    <a href="simplifier.html" class="special-card important-card">
       <h2>Mode d'emploi simplifié</h2>
       <p>Informations essentielles pour mettre en place son suivi</p>
     </a>
-    
+
     <details class="special-card quiz-card">
-      <summary>quizz rapide et grossier si tu te demandes si tu as une endométriose </summary>
+      <summary>quizz rapide et grossier pour prendre conscience des ses douleurs pelviennes <3 </summary>
     
       <form id="endoQuiz">
        
@@ -110,7 +111,7 @@
   
 
   <footer>
-    <p>✨ Si tu veux plus de précisions n'hésite pas à me contacter sur instagram @oxanaoox ou par mail oxana.redolfi@ensapc.fr</p>
+    <p> Si tu veux plus de précisions n'hésite pas à me contacter sur instagram @oxanaoox ou par mail oxana.redolfi@ensapc.fr</p>
   </footer>
   <script>
    
@@ -126,11 +127,17 @@
       }
   
       if (score >= 3) {
-        resultDiv.innerHTML = "dsl bb tu as probablement une endométriose";
+        resultDiv.innerHTML = "dsl bb tu as des douleurs pelviennes il faut que tu t'en occupes";
       } else {
         resultDiv.innerHTML = "trop stylé tout va bien pour l'instant";
       }
     }
   </script>
+  <div id="car">🚗</div>
+  <audio id="carSound" src="car.mp3"></audio>
+
+  <script src="glitter.js"></script>
+  <script src="car.js"></script>
+  
 </body>
 </html>
