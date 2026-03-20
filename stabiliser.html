@@ -4,20 +4,36 @@
     <meta charset="UTF-8">
     <title>comprendre</title>
     <link rel="stylesheet" href="style.css">
-
+    <script src="pigeon.js" defer></script>
 </head>
 
 <body>
     <h2>Gérer la douleur avec des professionels de la santé</h2>
-    <a href="index.html">← Retour à l’accueil</a>
-  </header>
+    <h3><a href="comprendre.html">← aller voir "comprendre l'endométriose"</a></h3>
+    <h3><a href="index.html">← retourner à l'index</a></h3>
+    <div class="conteneur-pigeon" id="conteneurPigeon">
+      <img src="pigeonwalking.gif" alt="Pigeon" class="pigeon" id="pigeon">
+    </div>
+
  
 <h5> <span class="tooltip"><i><b>Les mots en gras contiennent des définition si tu passes ta souris dessus.</b></i>
   <span class="tooltiptext">Oui comme ça !</span> 
-</span>. </h5>
+</span> </h5>
   <main>
     <section class="tools">
-        
+      <details>
+        <summary>Mode d'emploi pour un diagnostic</summary>
+            <p>
+              Avoir un diagnostic peut prendre beaucoup de temps, d'énergie et d'argent. C'est compliqué de trouver des professionnel.le.s de la santé qualifié,
+              et conventionné secteur 1. 
+            - interview erick petit
+            Parfois des lésions ne sont pas visibles à l'IRM mais à l'échographie et ça peut être l'inverse (ça dépend de l'endométriose) 
+<br>+ beaucoup de pro de la santé qui ne font pas bien les examens. <br>
+
+<br><br>MODE D'EMPLOI POUR UN DIAGNOSTIC CORRECT, parler des frais, de l'histoire des deux clous dans le livre neuromania + partie de l'interview kiné sur pas besoin d'un diagnostic
+            </p>
+ </details>
+
       <details>
         <summary> Trouver des professionels de la santé au courant </summary>
         <p> 
@@ -53,6 +69,7 @@
 
 
         </p>
+        <div class="fleche-fermeture">▲ réduire</div>
       </details>
 
       <details>
@@ -99,7 +116,9 @@
           et de se sentir légitime de souffrir parce que les douleurs pelviennes sont normalisées, mais c'est très important d'en prendre conscience pour ne pas 
           retarder une prise en charge.
 
+
         </p>
+        <div class="fleche-fermeture">▲ réduire</div>
       </details>
 
 
@@ -133,6 +152,7 @@
           J'ai rencontré des personnes qui avait reussi a stabiliser leur endométrioses malgrès leurs rêgles mais en "acceptant de sacrifier" quelques jours par mois aux douleurs.
         + parler des hormones + des risques de la pillule 
         </p>
+        <div class="fleche-fermeture">▲ réduire</div>
       </details>
 
       <details>
@@ -171,6 +191,7 @@
 
         <br><br> insérer notes rdv algologue 
         </p>
+        <div class="fleche-fermeture">▲ réduire</div>
       </details>
 
 
@@ -228,6 +249,7 @@
          <br>
          
           </p>
+          <div class="fleche-fermeture">▲ réduire</div>
       </details>
      
       <details>
@@ -354,15 +376,23 @@ qui touche le corps dans sa globalité. Une prise en charge pluridisciplinaire e
 
           
         </summary>
+        <div class="fleche-fermeture">▲ réduire</div>
        </details>
-      
-
-        
-            </p>
-          </details>
-        
-
     </section>
   </main>
+  <br><br><br>
+  <h6> <a href="gerer.html"> aller voir des techniques pour diminuer la douleur au quotien →</a></h6>
 </body>
+<script src="glitter.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    
+      document.querySelectorAll(".fleche-fermeture").forEach(arrow => {
+        arrow.addEventListener("click", function() {
+          this.closest("details").removeAttribute("open");
+        });
+      });
+    
+    });
+    </script>
 </html>
