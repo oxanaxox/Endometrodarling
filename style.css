@@ -25,6 +25,23 @@ body.accueil {
   padding: 0 1rem 1000px 1rem; 
 }
 
+body.stabiliser {
+  background-image : url("pelvic\ floor\ muscles.png");
+}
+
+.fondpigeon {
+  position: fixed;
+  top:20px;
+  left: 0;
+  right: O;
+  bottom: O;
+  background-image: url("pigeonfix.tiff");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+  pointer-events: none;
+}
 
 header, main {
   display: block;
@@ -92,7 +109,6 @@ h2 {
   font-size: 30px;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode' Verdana, serif;
   text-align:center;
-  
 }
 
 h3{
@@ -627,6 +643,38 @@ header {
   width: 100px;
   height: auto;
   margin-right: 15px;
+  pointer-events: none;
+}
+
+.etirr {
+  float: left;
+  width: 100px;
+  height: auto;
+  margin-right: 33px;
+  pointer-events: none;
+}
+
+.etirrd {
+  float: right;
+  width: 100px;
+  height: auto;
+  margin-left: 33px;
+  pointer-events: none;
+}
+
+.etirrg {
+  float: left;
+  width: 140px;
+  height: auto;
+  margin-right: 33px;
+  pointer-events: none;
+}
+
+.etirrgd {
+  float: right;
+  width: 140px;
+  height: auto;
+  margin-left: 33px;
   pointer-events: none;
 }
 
